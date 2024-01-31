@@ -1,45 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-
-      if (localStorage.getItem('consentMode') === null) {
-        gtag('consent', 'default', {
-          functionality_storage: 'denied',
-          security_storage: 'denied',
-          ad_storage: 'denied',
-          analytics_storage: 'denied',
-          personalization: 'denied',
-        })
-      } else {
-        gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')))
-      }
-    </script>
-
-    <script>
-      ;(function (w, d, s, l, i) {
-        w[l] = w[l] || []
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : ''
-        j.async = true
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-        f.parentNode.insertBefore(j, f)
-      })(window, document, 'script', 'dataLayer', 'GTM-NTXJ6R88')
-    </script>
+    <meta charset="UTF-8"> 
 
     <meta name="viewport" content="width=device-width">
-    <meta name="generator" content="Astro v2.10.15">
-    <link rel="apple-touch-icon" sizes="180x180" href="logo.png"> 
+    <meta name="generator" content="Astro v2.10.15"> 
     <link href="logo.png" rel="icon" type="image/x-icon"  > 
-    <meta name="msapplication-TileColor" content="#1e1e1e">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#1e1e1e"> 
     <meta name="theme-color" content="#1e1e1e">
     <title>Dream Browser </title>
     <meta name="description" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
