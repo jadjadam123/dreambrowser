@@ -1,1027 +1,1321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"> 
 
-    <meta name="viewport" content="width=device-width">
-    <meta name="generator" content="Astro v2.10.15"> 
-    <link href="logo.png" rel="icon" type="image/x-icon"  > 
-    <meta name="msapplication-TileColor" content="#1e1e1e"> 
-    <meta name="theme-color" content="#1e1e1e">
-    <title>Dream Browser </title>
-    <meta name="description" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
-    <meta name="keywords" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
+<head>
+  <meta charset="UTF-8">
 
-    <meta property="og:image" content="logo.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="628">
-    <meta property="og:title" content=" Dream Browser ">
-    <meta property="og:description" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
-    
+  <meta name="viewport" content="width=device-width">
+  <meta name="generator" content="Astro v2.10.15">
+  <link href="logop.png" rel="icon" type="image/x-icon">
+  <meta name="msapplication-TileColor" content="#1e1e1e">
+  <meta name="theme-color" content="#1e1e1e">
+  <title>Dream Browser </title>
+  <meta name="description" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
+  <meta name="keywords" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
+
+  <meta property="og:image" content="logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:title" content=" Dream Browser ">
+  <meta property="og:description" content="Boost Your Trading Efficiency with Dream Browser's Split View Functionality">
+
   <link rel="stylesheet" href="assets/bundle.004342a1.css" />
-<link rel="stylesheet" href="assets/bundle.d9303d95.css" />
-<link rel="stylesheet" href="assets/bundle.147b5f6e.css" />
-<link rel="stylesheet" href="assets/bundle.8f89c102.css" /><script type="module" src="assets/bundle.ad567207.js"></script>
+  <link rel="stylesheet" href="assets/bundle.d9303d95.css" />
+  <link rel="stylesheet" href="assets/bundle.147b5f6e.css" />
+  <link rel="stylesheet" href="assets/bundle.8f89c102.css" />
+  <script type="module" src="assets/bundle.ad567207.js"></script>
 
 
-<style>
+  <style>
+    a.logo img {
+      width: 194px;
+      padding: 10px !important;
+      margin-top: 51px;
+    }
 
-a.logo img {
-    width: 194px;
-    padding: 10px !important;
-    margin-top: 51px;
+    .landing-intro-text {
+      display: none;
+    }
+
+    .landing-intro-buttons {
+      display: none;
+    }
+
+    .landing-intro-footer {
+      display: none;
+    }
+
+    .landing-work-casestudy-button,
+    span.ts-label,
+    h3.ts-3,
+    ul.tags {
+      display: none;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .preloader-icon-inner svg {
+      visibility: hidden;
+    }
+
+    h2.ts-1,
+    h2.ts-2 {
+      margin-top: 100px;
+      color: #fff;
+    }
+    .imagecenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-.landing-intro-text {
-    display: none;
+
+    span.char.em {
+      color: #00f0ff;
+    }
+
+    .lasttesxt {
+      margin-bottom: 30px;
+    }
+    .lasttesxt p {
+      line-height: 20px !important;
+  }
+  .ts-eyebrown {
+      font-size: 23px;
+  }
+  .line-inner {
+        white-space: normal;
+  } 
+li.socials-li {
+    background: #1d9bf0;
+    border-radius: 50px;
+    width: 43px;
+    height: 43px;
+    text-align: center !important;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-.landing-intro-buttons {
-    display: none;
+li.socials-li:first-child{
+  background:#34aadf;
 }
-.landing-intro-footer {
-    display: none;
+li.socials-li  a{
+   margin: 0;
 }
-.landing-work-casestudy-button,
-span.ts-label,
-h3.ts-3,
-ul.tags {
-    display: none;
+ul.socials-ul {
+    padding: 15px;
 }
-.hide{
-  display: none;
-}
-.preloader-icon-inner svg{
-  visibility: hidden;
-}
-h2.ts-1,
-h2.ts-2 {
-    margin-top: 60px;
-}
-.header-logo { 
-    justify-content: left;
-}
- 
-a.button.button--outlined.button.button--md.button--icon-green{
-  display: none;
-}
-.header-toggle,
-.header-nav {
-    display: none;
-} 
-</style>
+
+
+    .fade {
+      animation: fadeIn 5s;
+      -webkit-animation: fadeIn 5s;
+      -moz-animation: fadeIn 5s;
+      -o-animation: fadeIn 5s;
+      -ms-animation: fadeIn 5s;
+      ;
+    }
+
+    #snake-challenge {
+      display: none !important;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-ms-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 799px) {
+      .landing-intro-content {
+        background: url(logoW.png) no-repeat;
+        background-size: 250PX;
+        background-position: bottom;
+      }
+
+      .header-logo {
+        display: none;
+      }
+
+      .header .wrap--wide {
+        justify-content: left;
+        padding: 10px 0 0;
+      }
+      
+    }
+    .landing-work-casestudy{
+      display: none;
+    }
+    .landing-work-casestudy:first-child{
+      display: block;
+    }
+
+
+    a.button.button--outlined.button.button--md.button--icon-green {
+      display: none;
+    }
+
+    .header-toggle img {
+      width: 114px;
+      margin-top: 68px;
+    }
+
+    em {
+      color: #00f0ff;
+    }
+  </style>
 
 </head>
-  <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTXJ6R88" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <div id="gl">
-      <div class="gl-main-bubble"></div>
-      <div class="gl-image"></div>
-      <div class="gl-landing-image"></div>
-    </div>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTXJ6R88" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
 
-    <header class="header">
-  <div class="header-bg"></div>
-  <div class="header-scroll-top"></div>
+  <div id="gl">
+    <div class="gl-main-bubble"></div>
+    <div class="gl-image"></div>
+    <div class="gl-landing-image"></div>
+  </div>
 
-  <div class="wrap--wide">
-    <div class="header-toggle">
-      <button class="button" aria-label="Open menu">
-        <span class="button-gradient"></span>
-        <span class="button-bg"></span>
-        <span class="button-text-outer">
-          <span class="button-text">
-            <span class="button-text--open">
-              <span class="button-text-static">Menu</span>
-              <span class="button-text-hover">Menu</span>
-            </span>
-          
-            <span class="button-text button-text--close">
-              <span class="button-text-static">Close</span>
-              <span class="button-text-hover">Close</span>
+  <header class="header">
+    <div class="header-bg"></div>
+    <div class="header-scroll-top"></div>
+
+    <div class="wrap--wide">
+      <div class="header-toggle">
+        <img src="logop.png">
+        <button class="hide button" aria-label="Open menu">
+          <span class="button-gradient"></span>
+          <span class="button-bg"></span>
+          <span class="button-text-outer">
+            <span class="button-text">
+              <span class="button-text--open">
+                <span class="button-text-static">Menu</span>
+                <span class="button-text-hover">Menu</span>
+              </span>
+
+              <span class="button-text button-text--close">
+                <span class="button-text-static">Close</span>
+                <span class="button-text-hover">Close</span>
+              </span>
             </span>
           </span>
-        </span>
 
 
-        <span class="button-icon button-icon--menu">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M0 6H12" stroke="currentColor" stroke-width="1.5" stroke-dasharray="12 0"></path>
-  <path d="M0 6H12" stroke="currentColor" stroke-width="1.5"></path>
-</svg>
-        </span>
-      </button>
-    </div>
-    <div class="header-logo">
-      <a href="index.html" class="logo" aria-label="Engaged">
-   <img src="logo.png">
-</a>
-    </div>
-    <div class="header-nav">
-      <nav class="nav">
-  <div class="nav-cta">
-    <a href="contact.html" class="button button--green button button--xs" aria-label="Get in touch">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="hide button-text">
-    <span class="button-text-static">Get in touch</span>
-    <span class="button-text-hover">Get in touch</span>
-  </span>
-
-  
-</a>
-  </div>
-
-  <div class="nav-lang">
-    <a href="#" data-router-ignore class="button button--outlined button button--xs" aria-label="Language toggle">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="hide button-text">
-    <span class="button-text-static"> </span>
-    <span class="button-text-hover"> </span>
-  </span>
-
-  
-</a>
-  </div> 
-</nav>
-    </div>
-  </div>
-</header>
-    <div class="cookies" style="opacity: 0; pointer-events: none;">
-  <div class="wrap--narrow">
-    <div class="cookies-banner">
-      <div class="cookies-banner-text">
-        <p>This website uses cookies to ensure you get the best experience. Read all about it in our <a href='privacy-policy.html' data-router-ignore>privacy policy</a>.</p>
+          <span class="button-icon button-icon--menu">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 6H12" stroke="currentColor" stroke-width="1.5" stroke-dasharray="12 0"></path>
+              <path d="M0 6H12" stroke="currentColor" stroke-width="1.5"></path>
+            </svg>
+          </span>
+        </button>
       </div>
-      <div class="cookies-banner-buttons">
-        <a href="index.html#" class="button button--purple button button--xs" aria-label="Accept">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">Accept</span>
-    <span class="button-text-hover">Accept</span>
-  </span>
-
-  
-</a>
-        <a href="index.html#" class="button button--grey button button--xs" aria-label="Refuse">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">Refuse</span>
-    <span class="button-text-hover">Refuse</span>
-  </span>
-
-  
-</a>
+      <div class="header-logo">
+        <a href="index.html" class="logo" aria-label="Engaged">
+          <img src="logow.png">
+        </a>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="header-nav">
+        <nav class="nav">
+          <div class="hide nav-cta">
+            <a href="#" class="button button--green button button--xs" aria-label="Get in touch">
+              <span class="button-gradient"></span>
+              <span class="button-bg"></span>
 
-    <div class="page-main">
-      <main class="page-main-inner">
-        <div class="home" data-view="home" style="opacity: 0;">
-          
-  <div data-scroll data-scroll-shim>
-    <div data-scroll-item class="landing-intro">
-      <div class="gl-dom-bubble gl-dom-bubble-mobile"></div>
-      <div class="landing-intro-screen">
-        <div class="landing-intro-content">
-          <div class="wrap--narrow">
-            <div class="landing-intro-content-inner">
-              <h2 class="landing-intro-title ts-1">
-                <span class="line" data-split-char-line>
-    <span>We</span><span> </span><span>turn</span><span> </span><span><em>heads</em></span><span>.</span><span></span>
-  </span><span class="line" data-split-char-line>
-    <span>We</span><span> </span><span>win</span><span> </span><span><em>hearts</em></span><span>.</span><span></span>
-  </span>
-              </h2>
 
-              <div class="landing-intro-buttons">
-                <a href="index.html#reel" class="button button--primary button button--md" aria-label="Watch our reel">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
 
-  
+              <span class="hide button-text">
+                <span class="button-text-static">Get in touch</span>
+                <span class="button-text-hover">Get in touch</span>
+              </span>
 
-  <span class="button-text">
-    <span class="button-text-static">Watch our reel</span>
-    <span class="button-text-hover">Watch our reel</span>
-  </span>
 
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path fill="var(--button-icon-color)" d="M10.5 14.3981V9.60188C10.5 9.1723 11.006 8.94271 11.3293 9.22559L14.07 11.6237C14.2976 11.8229 14.2976 12.1771 14.07 12.3763L11.3293 14.7744C11.006 15.0573 10.5 14.8277 10.5 14.3981Z"></path>
-</svg>
-      </span>
-</a><a href="work.1.html" class="button button--outlined button button--md button--icon-green" aria-label="View our work">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">View our work</span>
-    <span class="button-text-hover">View our work</span>
-  </span>
-
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
-              </div>
-
-              <div class="landing-intro-text">
-                <p class="ts-p" data-split-lines>We are a leading <em>omnichannel brand</em><br> <em>activation agency</em> helping brands get results<br> by engaging with people in memorable<br> experiences. <a href='vision.html'>Read our vision.</a></p>
-              </div>
-            </div>
+            </a>
           </div>
+
+          <div class="nav-lang hide">
+            <a href="#" data-router-ignore class="button button--outlined button button--xs"
+              aria-label="Language toggle">
+              <span class="button-gradient"></span>
+              <span class="button-bg"></span>
+
+
+
+              <span class="hide button-text">
+                <span class="button-text-static"> </span>
+                <span class="button-text-hover"> </span>
+              </span>
+
+
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="cookies" style="opacity: 0; pointer-events: none;">
+    <div class="wrap--narrow">
+      <div class="cookies-banner">
+        <div class="cookies-banner-text">
+          <p>This website uses cookies to ensure you get the best experience. Read all about it in our <a
+              href='privacy-policy.html' data-router-ignore>privacy policy</a>.</p>
         </div>
-        <div class="landing-intro-footer">
-          <div class="wrap--narrow">
-            <div class="landing-intro-footer-cta">
-              <div class="scroll-cta">
-  <div class="scroll-cta-icon">
-    <img src="images/template/scroll-cta-icon.svg" alt="Scroll cta icon">
-  </div>
-  <div class="scroll-cta-text ts-eyebrown">Scroll</div>
-</div>
-            </div>
-            <div class="landing-intro-clients">
-              <div class="ts-eyebrown">Trusted by</div>
-              <div class="landing-intro-clients-container">
-                <div class="landing-intro-client">
-                      <div class="landing-intro-client-inner">
-                        <img src="images/logos/lego.svg" alt="Logo lego.svg">
-                      </div>
-                    </div><div class="landing-intro-client">
-                      <div class="landing-intro-client-inner">
-                        <img src="images/logos/mastercard.svg" alt="Logo mastercard.svg">
-                      </div>
-                    </div><div class="landing-intro-client">
-                      <div class="landing-intro-client-inner">
-                        <img src="images/logos/warner-bros.svg" alt="Logo warner-bros.svg">
-                      </div>
-                    </div><div class="landing-intro-client">
-                      <div class="landing-intro-client-inner">
-                        <img src="images/logos/20stcentury.svg" alt="Logo 20stcentury.svg">
-                      </div>
-                    </div><div class="landing-intro-client">
-                      <div class="landing-intro-client-inner">
-                        <img src="images/logos/nokia.svg" alt="Logo nokia.svg">
-                      </div>
-                    </div>
-              </div>
-            </div>
-          </div>
+        <div class="cookies-banner-buttons">
+          <a href="index.html#" class="button button--purple button button--xs" aria-label="Accept">
+            <span class="button-gradient"></span>
+            <span class="button-bg"></span>
+
+
+
+            <span class="button-text">
+              <span class="button-text-static">Accept</span>
+              <span class="button-text-hover">Accept</span>
+            </span>
+
+
+          </a>
+          <a href="index.html#" class="button button--grey button button--xs" aria-label="Refuse">
+            <span class="button-gradient"></span>
+            <span class="button-bg"></span>
+
+
+
+            <span class="button-text">
+              <span class="button-text-static">Refuse</span>
+              <span class="button-text-hover">Refuse</span>
+            </span>
+
+
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div data-scroll-item class="landing-services">
-      <div class="landing-services-screen">
-        <div class="landing-services-content">
-          <div class="wrap--narrow">
-            <div class="grid grid-cols-12 gap-x-24">
-              <div class="col-span-12 lg:col-span-6 lg:col-start-4">
-                <div class="landing-services-title">
-                  <h2 class="ts-2">
-                    <span class="line" data-split-char-line>
-    <span>Boost Your Trading Efficiency</span><span> </span> 
-  </span><span class="line" data-split-char-line>
-    <span>with Dream Browser's </span> <span>  
-  </span> 
-  <span class="line" data-split-char-line>
-    <span><em> Split View </em></span> <span><em>Functionality</em></span>
-  </span>
-                  </h2>
-                </div>
-              </div>
-              <div class="col-span-12 lg:col-span-4 lg:col-start-7">
-                <div class="landing-services-text">
-                  <p class="ts-p-sm" data-split-lines>
-                    Revolutionize your Web3 trading experience with Dream Browser's <br>
-                     innovative split view capabilities. <br>
-                    
-                    This feature is a game-changer for traders, enabling them to simultaneously focus on multiple aspects. <br>
-                    By effortlessly splitting the browser screen to view two websites or web applications side by side,<br>
-                     traders can stay on top of real-time market data, monitor portfolio performance,<br>
-                     and stay abreast of the latest news and analysis.<br>
-                      This functionality empowers traders to swiftly make informed decisions,<br>
-                       elevating their multitasking capabilities and optimizing their trading strategies.
-                      <br>
-                       Dream Browser provides a seamless and efficient multitasking experience, 
-                       <br>empowering Web3 traders to proactively navigate the dynamic landscape 
-                       <br>of cryptocurrency and decentralized finance,
-                       <br> staying ahead of the curve and capitalizing on profitable opportunities.</p>
-                </div>
+  <div class="page-main">
+    <main class="page-main-inner">
+      <div class="home" data-view="home" style="opacity: 0;">
 
-                <a href="services.html" class="hide button button--outlined button button--md button--icon-green" aria-label="undefined">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
+        <div data-scroll data-scroll-shim>
+          <div data-scroll-item class="landing-intro">
+            <div class="gl-dom-bubble gl-dom-bubble-mobile"></div>
+            <div class="landing-intro-screen">
+              <div class="landing-intro-content">
+                <div class="wrap--narrow">
+                  <div class="landing-intro-content-inner">
+                    <h2 class="landing-intro-title ts-1">
+                      <span class="line" data-split-char-line>
+                        <span>Welcome</span><span> </span><span>to</span><span> </span><span><em></em></span>
+                        <span></span>
+                      </span><span class="line" data-split-char-line>
+                        <span> </span><span><em>Dream Browser</em></span><span> </span> <span></span><span></span>
+                      </span>
+                    </h2>
 
-  
+                    <div class="landing-intro-buttons">
+                      <a href="index.html#reel" class="button button--primary button button--md"
+                        aria-label="Watch our reel">
+                        <span class="button-gradient"></span>
+                        <span class="button-bg"></span>
 
-  <span class="button-text">
-    <span class="button-text-static">Discover our services</span>
-    <span class="button-text-hover">Discover our services</span>
-  </span>
 
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div data-scroll-item class="landing-work">
-      <div class="landing-work-screen">
-        <div class="landing-work-content">
-          <div class="wrap--wide tablet:text-center">
-            <div class="landing-work-casestudies">
-              <div class="landing-work-casestudy" data-casestudy-id="the-legend-of-tarzan">
-                    <a href="work/the-legend-of-tarzan.html" class="lg:hidden">
-                        <span class="landing-work-casestudy-image">
-                            <picture>
-                              <source srcset="/images/uploads/thumbnail/sm/the-legend-of-tarzan-sm.webp" type="image/webp">
-                              <source srcset="/images/uploads/thumbnail/sm/the-legend-of-tarzan-sm.jpg" type="image/jpeg">
-                              <img src="images/uploads/thumbnail/sm/the-legend-of-tarzan-sm.jpg" alt="The Legend of Tarzan">
-                            </picture>
-                          </span>
+                        <span class="button-text">
+                          <span class="button-text-static">Watch our reel</span>
+                          <span class="button-text-hover">Watch our reel</span>
+                        </span>
 
-                      <span class="ts-label">Warner Bros.</span>
-                      <h3 class="ts-3">
-                        <span class="line" data-split-char-line>
-    <span><em>The</em></span><span> </span><span><em>Legend</em></span>
-  </span><span class="line" data-split-char-line>
-    <span>of</span><span> </span><span>Tarzan</span>
-  </span>
-                      </h3>
-                      <ul class="tags">
-                          <li>DOOH</li><li>Omnichannel Brand Activation</li><li>Social</li>
-                        </ul>
-                    </a>
+                        <span class="button-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                            <path fill="var(--button-icon-color)"
+                              d="M10.5 14.3981V9.60188C10.5 9.1723 11.006 8.94271 11.3293 9.22559L14.07 11.6237C14.2976 11.8229 14.2976 12.1771 14.07 12.3763L11.3293 14.7744C11.006 15.0573 10.5 14.8277 10.5 14.3981Z">
+                            </path>
+                          </svg>
+                        </span>
+                      </a><a href="work.1.html" class="button button--outlined button button--md button--icon-green"
+                        aria-label="View our work">
+                        <span class="button-gradient"></span>
+                        <span class="button-bg"></span>
 
-                    <span class="landing-work-casestudy-ts-label ts-label">Warner Bros.</span>
-                    <h3 class="landing-work-casestudy-ts-3 ts-3">
-                        <span class="line" data-split-char-line>
-    <span><em>The</em></span><span> </span><span><em>Legend</em></span>
-  </span><span class="line" data-split-char-line>
-    <span>of</span><span> </span><span>Tarzan</span>
-  </span>
-                      </h3>
-                    <ul class="landing-work-casestudy-tags tags">
-                        <li>DOOH</li><li>Omnichannel Brand Activation</li><li>Social</li>
-                      </ul>
-                    <div class="landing-work-casestudy-button">
-                      <a href="work/the-legend-of-tarzan.html" class="button button--primary button button--md" aria-label="Open case study">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
 
-  
 
-  <span class="button-text">
-    <span class="button-text-static">Open case study</span>
-    <span class="button-text-hover">Open case study</span>
-  </span>
+                        <span class="button-text">
+                          <span class="button-text-static">View our work</span>
+                          <span class="button-text-hover">View our work</span>
+                        </span>
 
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
+                        <span class="button-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                            <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </span>
+                      </a>
                     </div>
-                  </div><div class="landing-work-casestudy" data-casestudy-id="snake-challenge">
-                    <a href="work/snake-challenge.html" class="lg:hidden">
-                        <span class="landing-work-casestudy-image">
-                            <picture>
-                              <source srcset="/images/uploads/thumbnail/sm/snake-challenge-sm.webp" type="image/webp">
-                              <source srcset="/images/uploads/thumbnail/sm/snake-challenge-sm.jpg" type="image/jpeg">
-                              <img src="images/uploads/thumbnail/sm/snake-challenge-sm.jpg" alt="Snake Challenge">
-                            </picture>
-                          </span>
 
-                      <span class="ts-label">HMD Global</span>
-                      <h3 class="ts-3">
-                        <span class="line" data-split-char-line>
-    <span><em>Snake</em></span><span> </span><span><em>Challenge</em></span>
-  </span>
-                      </h3>
-                      <ul class="tags">
-                          <li>In-store experience</li><li>Omnichannel Brand Activation</li><li>Branded Content</li>
-                        </ul>
-                    </a>
-
-                    <span class="landing-work-casestudy-ts-label ts-label">HMD Global</span>
-                    <h3 class="landing-work-casestudy-ts-3 ts-3">
-                        <span class="line" data-split-char-line>
-    <span><em>Snake</em></span><span> </span><span><em>Challenge</em></span>
-  </span>
-                      </h3>
-                    <ul class="landing-work-casestudy-tags tags">
-                        <li>In-store experience</li><li>Omnichannel Brand Activation</li><li>Branded Content</li>
-                      </ul>
-                    <div class="landing-work-casestudy-button">
-                      <a href="work/snake-challenge.html" class="button button--primary button button--md" aria-label="Open case study">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">Open case study</span>
-    <span class="button-text-hover">Open case study</span>
-  </span>
-
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
-                    </div>
-                  </div><div class="landing-work-casestudy" data-casestudy-id="kingsman-the-take-over">
-                    <a href="work/kingsman-the-take-over.html" class="lg:hidden">
-                        <span class="landing-work-casestudy-image">
-                            <picture>
-                              <source srcset="/images/uploads/thumbnail/sm/kingsman-the-take-over-sm.webp" type="image/webp">
-                              <source srcset="/images/uploads/thumbnail/sm/kingsman-the-take-over-sm.jpg" type="image/jpeg">
-                              <img src="images/uploads/thumbnail/sm/kingsman-the-take-over-sm.jpg" alt="Kingsman - The take-over">
-                            </picture>
-                          </span>
-
-                      <span class="ts-label">20th Century Fox</span>
-                      <h3 class="ts-3">
-                        <span class="line" data-split-char-line>
-    <span>Kingsman</span>
-  </span><span class="line" data-split-char-line>
-    <span><em>The</em></span><span> </span><span><em>take-over</em></span>
-  </span>
-                      </h3>
-                      <ul class="tags">
-                          <li>Brand Activation</li><li>Omnichannel Brand Activation</li><li>Digital Campaign</li>
-                        </ul>
-                    </a>
-
-                    <span class="landing-work-casestudy-ts-label ts-label">20th Century Fox</span>
-                    <h3 class="landing-work-casestudy-ts-3 ts-3">
-                        <span class="line" data-split-char-line>
-    <span>Kingsman</span>
-  </span><span class="line" data-split-char-line>
-    <span><em>The</em></span><span> </span><span><em>take-over</em></span>
-  </span>
-                      </h3>
-                    <ul class="landing-work-casestudy-tags tags">
-                        <li>Brand Activation</li><li>Omnichannel Brand Activation</li><li>Digital Campaign</li>
-                      </ul>
-                    <div class="landing-work-casestudy-button">
-                      <a href="work/kingsman-the-take-over.html" class="button button--primary button button--md" aria-label="Open case study">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">Open case study</span>
-    <span class="button-text-hover">Open case study</span>
-  </span>
-
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
-                    </div>
-                  </div><div class="landing-work-casestudy" data-casestudy-id="the-ar-playbook">
-                    <a href="work/the-ar-playbook.html" class="lg:hidden">
-                        <span class="landing-work-casestudy-image">
-                            <picture>
-                              <source srcset="/images/uploads/thumbnail/sm/the-ar-playbook-sm.webp" type="image/webp">
-                              <source srcset="/images/uploads/thumbnail/sm/the-ar-playbook-sm.jpg" type="image/jpeg">
-                              <img src="images/uploads/thumbnail/sm/the-ar-playbook-sm.jpg" alt="The AR Playbook">
-                            </picture>
-                          </span>
-
-                      <span class="ts-label">Intertoys</span>
-                      <h3 class="ts-3">
-                        <span class="line" data-split-char-line>
-    <span>The</span><span> </span><span><em>AR</em></span><span> </span><span><em>Playbook</em></span>
-  </span>
-                      </h3>
-                      <ul class="tags">
-                          <li>Augmented Reality</li><li>Brand Activation</li><li>Ecomm</li>
-                        </ul>
-                    </a>
-
-                    <span class="landing-work-casestudy-ts-label ts-label">Intertoys</span>
-                    <h3 class="landing-work-casestudy-ts-3 ts-3">
-                        <span class="line" data-split-char-line>
-    <span>The</span><span> </span><span><em>AR</em></span><span> </span><span><em>Playbook</em></span>
-  </span>
-                      </h3>
-                    <ul class="landing-work-casestudy-tags tags">
-                        <li>Augmented Reality</li><li>Brand Activation</li><li>Ecomm</li>
-                      </ul>
-                    <div class="landing-work-casestudy-button">
-                      <a href="work/the-ar-playbook.html" class="button button--primary button button--md" aria-label="Open case study">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">Open case study</span>
-    <span class="button-text-hover">Open case study</span>
-  </span>
-
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
+                    <div class="landing-intro-text">
+                      <p class="ts-p" data-split-lines>We are a leading <em>omnichannel brand</em><br> <em>activation
+                          agency</em> helping brands get results<br> by engaging with people in memorable<br>
+                        experiences. <a href='vision.html'>Read our vision.</a></p>
                     </div>
                   </div>
-            </div>
-
-            <a href="work.1.html" class="button button--outlined button button--md button--icon-green" aria-label="View all our work">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="button-text">
-    <span class="button-text-static">View all our work</span>
-    <span class="button-text-hover">View all our work</span>
-  </span>
-
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div data-scroll-item class="landing-vision">
-      <div class="landing-vision-screen">
-        <div class="landing-vision-content">
-          <div class="wrap--narrow">
-            <div class="lg:grid grid-cols-12 gap-x-24">
-              <div class="col-span-7 lg:col-start-3">
-                <div class="landing-vision-title">
-                  <h2 class="ts-1">
-                    <span class="line" data-split-char-line>
-    <span></span><span> </span> <span> </span> 
-  </span>
-  
-  <span class="line" data-split-char-line>
-     <span> ABOUT </span><span>  </span><span> </span> 
-  </span><span class="line" data-split-char-line>
-    <span> </span><span> </span><span><em>DreamBrowser</em></span><span> </span> .</span><span></span>
-  </span>
-                  </h2>
                 </div>
               </div>
-              <div class="col-span-4 col-start-7">
-                <div class="landing-vision-text">
-                   
-                  <p class="ts-p-sm" data-split-lines>
-                    Discover Dream Browser's Exclusive Search Solution: <em>Dreamsearch.com </em> Introducing 
-                    <br>Dreamsearch.com, our proprietary decentralized search engine fueled by <br> 
-                    state-of-the-art AI technology. Emphasizing privacy and precision, Dreamsearch.com 
-                    <br>aggregates information from top search engines, employing AI <br>
-                     algorithms to curate optimal and relevant results for your queries. By opting for<br>
-                      Oxsearch.com, users can enjoy an entirely private search experience without sacrificing <br>
-                      result quality. Your online activities are shielded from tracking and storage, preserving<br>
-                       the confidentiality of your personal information. We champion privacy as a fundamental right,
-                        and our in-house<br> search engine is designed with this principle in mind, enabling you to navigate
-                         the web without <br>unwanted surveillance. With Dreamsearch.com, delve into the vast realm of the  
-                         internet, confident<br> that your actions remain safeguarded from prying eyes. Experience the synergy  Browser. Empower
-                          <br>yourself with Dreamsearch.com for comprehensive search capabilities while 
+              <div class="landing-intro-footer">
+                <div class="wrap--narrow">
+                  <div class="landing-intro-footer-cta">
+                    <div class="scroll-cta">
+                      <div class="scroll-cta-icon">
+                        <img src="images/template/scroll-cta-icon.svg" alt="Scroll cta icon">
+                      </div>
+                      <div class="scroll-cta-text ts-eyebrown">Scroll</div>
+                    </div>
+                  </div>
+                  <div class="landing-intro-clients">
+                    <div class="ts-eyebrown">Trusted by</div>
+                    <div class="landing-intro-clients-container">
+                      <div class="landing-intro-client">
+                        <div class="landing-intro-client-inner">
+                          <img src="images/logos/lego.svg" alt="Logo lego.svg">
+                        </div>
+                      </div>
+                      <div class="landing-intro-client">
+                        <div class="landing-intro-client-inner">
+                          <img src="images/logos/mastercard.svg" alt="Logo mastercard.svg">
+                        </div>
+                      </div>
+                      <div class="landing-intro-client">
+                        <div class="landing-intro-client-inner">
+                          <img src="images/logos/warner-bros.svg" alt="Logo warner-bros.svg">
+                        </div>
+                      </div>
+                      <div class="landing-intro-client">
+                        <div class="landing-intro-client-inner">
+                          <img src="images/logos/20stcentury.svg" alt="Logo 20stcentury.svg">
+                        </div>
+                      </div>
+                      <div class="landing-intro-client">
+                        <div class="landing-intro-client-inner">
+                          <img src="images/logos/nokia.svg" alt="Logo nokia.svg">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-scroll-item class="landing-services">
+            <div class="landing-services-screen">
+              <div class="landing-services-content">
+                <div class="wrap--narrow">
+                  <div class="lg:grid grid-cols-12 gap-x-24">
+                    <div class="col-span-12 lg:col-span-10 lg:col-start-12">
+                      <div class="landing-services-title">
+                        <h2 class="ts-2">
+
+                          Boost Your Trading Efficiency with Dream Browser's <em>Split </em> View Functionality
+
+
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-span-5">
+
+                      <img src="pho2.jpg" style="
+                      padding: 50px 0;
+                      margin: 0 auto;
+                      display: block;
+                  ">
+                    </div>
+                    <div class="col-span-7">
+                      <div class="landing-services-text">
+                        <p class="ts-p-sm" data-split-lines>
+                          Revolutionize your Web3 trading experience with Dream Browser's  
+                          innovative split view capabilities.  
+
+                          This feature is a game-changer for traders, enabling them to simultaneously focus on multiple
+                          aspects.  
+                          By effortlessly splitting the browser screen to view two websites or web applications side by
+                          side, 
+                          traders can stay on top of real-time market data, monitor portfolio performance, 
+                          and stay abreast of the latest news and analysis. 
+                          This functionality empowers traders to swiftly make informed decisions, 
+                          elevating their multitasking capabilities and optimizing their trading strategies.
+                         
+                          Dream Browser provides a seamless and efficient multitasking experience,
+                          empowering Web3 traders to proactively navigate the dynamic landscape
+                          of cryptocurrency and decentralized finance,
+                          staying ahead of the curve and capitalizing on profitable opportunities.
+                        </p>
+                      </div>
+
+                      <a href="services.html" class="hide button button--outlined button button--md button--icon-green"
+                        aria-label="undefined">
+                        <span class="button-gradient"></span>
+                        <span class="button-bg"></span>
+
+
+
+                        <span class="button-text">
+                          <span class="button-text-static">Discover our services</span>
+                          <span class="button-text-hover">Discover our services</span>
+                        </span>
+
+                        <span class="button-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                            <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-scroll-item class="landing-work">
+            <div class="landing-work-screen">
+              <div class="landing-work-content">
+                <div class="wrap--wide tablet:text-center">
+                  <div class="landing-work-casestudies">
+                    <div class="landing-work-casestudy" data-casestudy-id="the-legend-of-tarzan">
+                      <a href="#" class="lg:hidden">
+                        <span class="landing-work-casestudy-image">
+                          <picture class="fade">
+
+                            <img src="pho1.jpg" alt="The Legend of Tarzan">
+                          </picture>
+                        </span>
+
+                        <span class="ts-label">Warner Bros.</span>
+                        <h3 class="ts-3">
+                          <span class="line" data-split-char-line>
+                            <span><em>The</em></span><span> </span><span><em>Legend</em></span>
+                          </span><span class="line" data-split-char-line>
+                            <span>of</span><span> </span><span>Tarzan</span>
+                          </span>
+                        </h3>
+                        <ul class="tags">
+                          <li>DOOH</li>
+                          <li>Omnichannel Brand Activation</li>
+                          <li>Social</li>
+                        </ul>
+                      </a>
+
+                      <span class="landing-work-casestudy-ts-label ts-label">Warner Bros.</span>
+                      <h3 class="landing-work-casestudy-ts-3 ts-3">
+                        <span class="line" data-split-char-line>
+                          <span><em>The</em></span><span> </span><span><em>Legend</em></span>
+                        </span><span class="line" data-split-char-line>
+                          <span>of</span><span> </span><span>Tarzan</span>
+                        </span>
+                      </h3>
+                      <ul class="landing-work-casestudy-tags tags">
+                        <li>DOOH</li>
+                        <li>Omnichannel Brand Activation</li>
+                        <li>Social</li>
+                      </ul>
+                      <div class="landing-work-casestudy-button">
+                        <a href="#" class="button button--primary button button--md" aria-label="Open case study">
+                          <span class="button-gradient"></span>
+                          <span class="button-bg"></span>
+
+
+
+                          <span class="button-text">
+                            <span class="button-text-static">Open case study</span>
+                            <span class="button-text-hover">Open case study</span>
+                          </span>
+
+                          <span class="button-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                              <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="landing-work-casestudy" data-casestudy-id="snake-challenge">
+                      <a href="work/snake-challenge.html" class="lg:hidden">
+                        <span class="landing-work-casestudy-image">
+                          <picture>
+                            <source srcset="/images/uploads/thumbnail/sm/snake-challenge-sm.webp" type="image/webp">
+                            <source srcset="/images/uploads/thumbnail/sm/snake-challenge-sm.jpg" type="image/jpeg">
+                            <img src="images/uploads/thumbnail/sm/snake-challenge-sm.jpg" alt="Snake Challenge">
+                          </picture>
+                        </span>
+
+                        <span class="ts-label">HMD Global</span>
+                        <h3 class="ts-3">
+                          <span class="line" data-split-char-line>
+                            <span><em>Snake</em></span><span> </span><span><em>Challenge</em></span>
+                          </span>
+                        </h3>
+                        <ul class="tags">
+                          <li>In-store experience</li>
+                          <li>Omnichannel Brand Activation</li>
+                          <li>Branded Content</li>
+                        </ul>
+                      </a>
+
+                      <span class="landing-work-casestudy-ts-label ts-label">HMD Global</span>
+                      <h3 class="landing-work-casestudy-ts-3 ts-3">
+                        <span class="line" data-split-char-line>
+                          <span><em>Snake</em></span><span> </span><span><em>Challenge</em></span>
+                        </span>
+                      </h3>
+                      <ul class="landing-work-casestudy-tags tags">
+                        <li>In-store experience</li>
+                        <li>Omnichannel Brand Activation</li>
+                        <li>Branded Content</li>
+                      </ul>
+                      <div class="landing-work-casestudy-button">
+                        <a href="work/snake-challenge.html" class="button button--primary button button--md"
+                          aria-label="Open case study">
+                          <span class="button-gradient"></span>
+                          <span class="button-bg"></span>
+
+
+
+                          <span class="button-text">
+                            <span class="button-text-static">Open case study</span>
+                            <span class="button-text-hover">Open case study</span>
+                          </span>
+
+                          <span class="button-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                              <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="landing-work-casestudy" data-casestudy-id="kingsman-the-take-over">
+                      <a href="work/kingsman-the-take-over.html" class="lg:hidden">
+                        <span class="landing-work-casestudy-image">
+                          <picture>
+                            <source srcset="/images/uploads/thumbnail/sm/kingsman-the-take-over-sm.webp"
+                              type="image/webp">
+                            <source srcset="/images/uploads/thumbnail/sm/kingsman-the-take-over-sm.jpg"
+                              type="image/jpeg">
+                            <img src="images/uploads/thumbnail/sm/kingsman-the-take-over-sm.jpg"
+                              alt="Kingsman - The take-over">
+                          </picture>
+                        </span>
+
+                        <span class="ts-label">20th Century Fox</span>
+                        <h3 class="ts-3">
+                          <span class="line" data-split-char-line>
+                            <span>Kingsman</span>
+                          </span><span class="line" data-split-char-line>
+                            <span><em>The</em></span><span> </span><span><em>take-over</em></span>
+                          </span>
+                        </h3>
+                        <ul class="tags">
+                          <li>Brand Activation</li>
+                          <li>Omnichannel Brand Activation</li>
+                          <li>Digital Campaign</li>
+                        </ul>
+                      </a>
+
+                      <span class="landing-work-casestudy-ts-label ts-label">20th Century Fox</span>
+                      <h3 class="landing-work-casestudy-ts-3 ts-3">
+                        <span class="line" data-split-char-line>
+                          <span>Kingsman</span>
+                        </span><span class="line" data-split-char-line>
+                          <span><em>The</em></span><span> </span><span><em>take-over</em></span>
+                        </span>
+                      </h3>
+                      <ul class="landing-work-casestudy-tags tags">
+                        <li>Brand Activation</li>
+                        <li>Omnichannel Brand Activation</li>
+                        <li>Digital Campaign</li>
+                      </ul>
+                      <div class="landing-work-casestudy-button">
+                        <a href="work/kingsman-the-take-over.html" class="button button--primary button button--md"
+                          aria-label="Open case study">
+                          <span class="button-gradient"></span>
+                          <span class="button-bg"></span>
+
+
+
+                          <span class="button-text">
+                            <span class="button-text-static">Open case study</span>
+                            <span class="button-text-hover">Open case study</span>
+                          </span>
+
+                          <span class="button-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                              <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="landing-work-casestudy" data-casestudy-id="the-ar-playbook">
+                      <a href="work/the-ar-playbook.html" class="lg:hidden">
+                        <span class="landing-work-casestudy-image">
+                          <picture>
+                            <source srcset="/images/uploads/thumbnail/sm/the-ar-playbook-sm.webp" type="image/webp">
+                            <source srcset="/images/uploads/thumbnail/sm/the-ar-playbook-sm.jpg" type="image/jpeg">
+                            <img src="images/uploads/thumbnail/sm/the-ar-playbook-sm.jpg" alt="The AR Playbook">
+                          </picture>
+                        </span>
+
+                        <span class="ts-label">Intertoys</span>
+                        <h3 class="ts-3">
+                          <span class="line" data-split-char-line>
+                            <span>The</span><span> </span><span><em>AR</em></span><span>
+                            </span><span><em>Playbook</em></span>
+                          </span>
+                        </h3>
+                        <ul class="tags">
+                          <li>Augmented Reality</li>
+                          <li>Brand Activation</li>
+                          <li>Ecomm</li>
+                        </ul>
+                      </a>
+
+                      <span class="landing-work-casestudy-ts-label ts-label">Intertoys</span>
+                      <h3 class="landing-work-casestudy-ts-3 ts-3">
+                        <span class="line" data-split-char-line>
+                          <span>The</span><span> </span><span><em>AR</em></span><span>
+                          </span><span><em>Playbook</em></span>
+                        </span>
+                      </h3>
+                      <ul class="landing-work-casestudy-tags tags">
+                        <li>Augmented Reality</li>
+                        <li>Brand Activation</li>
+                        <li>Ecomm</li>
+                      </ul>
+                      <div class="landing-work-casestudy-button">
+                        <a href="work/the-ar-playbook.html" class="button button--primary button button--md"
+                          aria-label="Open case study">
+                          <span class="button-gradient"></span>
+                          <span class="button-bg"></span>
+
+
+
+                          <span class="button-text">
+                            <span class="button-text-static">Open case study</span>
+                            <span class="button-text-hover">Open case study</span>
+                          </span>
+
+                          <span class="button-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                              <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                                stroke-linejoin="round"></path>
+                            </svg>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="work.1.html" class="button button--outlined button button--md button--icon-green"
+                    aria-label="View all our work">
+                    <span class="button-gradient"></span>
+                    <span class="button-bg"></span>
+
+
+
+                    <span class="button-text">
+                      <span class="button-text-static">View all our work</span>
+                      <span class="button-text-hover">View all our work</span>
+                    </span>
+
+                    <span class="button-icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                        <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-scroll-item class="landing-vision">
+            <div class="landing-vision-screen">
+              <div class="landing-vision-content">
+                <div class="wrap--narrow">
+                  <div class="lg:grid grid-cols-12 gap-x-24">
+                    <div class="col-span-12">
+                      <div class="landing-vision-title">
+                        <h2 class="ts-1">
+                     
+
+                  <span> About</span> <em>DreamBrowser</em>  
+                    
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-span-5">
+
+                      <div class="imagecenter">
+                      <img src="logo.png" style="
+                      width: 205px; 
+                      margin: auto; 
+                      align-items: center;
+                      padding-top: 30px;
+                      padding-bottom: 30px;
+                      display: block;
+                  ">
+                  </div>
+                    </div>
+                    <div class="col-span-7">
+                      <div class="landing-vision-text">
+
+                        <p class="ts-p-sm" data-split-lines>
+                          Discover Dream Browser's Exclusive Search Solution: <em>Dreamsearch.com </em> Introducing
+                          <br>Dreamsearch.com, our proprietary decentralized search engine fueled by <br>
+                          state-of-the-art AI technology. Emphasizing privacy and precision, Dreamsearch.com
+                          <br>aggregates information from top search engines, employing AI <br>
+                          algorithms to curate optimal and relevant results for your queries. By opting for<br>
+                          Oxsearch.com, users can enjoy an entirely private search experience without sacrificing <br>
+                          result quality. Your online activities are shielded from tracking and storage, preserving<br>
+                          the confidentiality of your personal information. We champion privacy as a fundamental right,
+                          and our in-house<br> search engine is designed with this principle in mind, enabling you to
+                          navigate
+                          the web without <br>unwanted surveillance. With Dreamsearch.com, delve into the vast realm of
+                          the
+                          internet, confident<br> that your actions remain safeguarded from prying eyes. Experience the
+                          synergy Browser. Empower
+                          <br>yourself with Dreamsearch.com for comprehensive search capabilities while
                           upholding your privacy.
 
-                  </p>
-                </div>
+                        </p>
+                      </div>
 
-                <a href="contact.html" class="button button--outlined button button--md button--icon-green" aria-label="undefined">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-
-  
-
-  <span class="hide button-text">
-    <span class="button-text-static">Stop the scroll, start to engage</span>
-    <span class="button-text-hover">Stop the scroll, start to engage</span>
-  </span>
-
-  <span class="button-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
-  <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5" stroke-linejoin="round"></path>
-</svg>
-      </span>
-</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer" data-scroll-item>
-  <div class="gl-dom-bubble" data-gl-parallax-bottom></div>
-  
-  <div class="footer-screen">
-    <div class="footer-screen-inner">
-      <div class="footer-top">
-        <div class="wrap--narrow">
-          <div class="grid grid-cols-12 gap-12 lg:gap-24">
-            <div class="col-span-12 lg:col-span-4 lg:col-start-8 grid grid-cols-2 gap-x-24 gap-y-24 lg:gap-y-56">
-              <div class="  footer-info-block">
-  <div class="ts-eyebrown ts-purple"> </div>
-   <p>
-    The $DREAM token is expressly clarified as
-    <br> non-securities. 
-    Dream Browser INC assumes no responsibility<br>  for any losses
-     incurred from acquiring $DREAM tokens.<br> It is  crucial to  
-     recognize that obtaining $DREAM tokens <br> is not mandatory for 
-      accessing Dream Browser. Furthermore,<br> it is  essential to 
-      comprehend that the purchase of $DREAM <br>tokens does  not assure 
-       any financial gains.
-   </p>
-</div>
-<div class="footer-info-block"></div>
-
-<div class="hide footer-info-block">
-  <div class="ts-eyebrown ts-purple">Antwerp</div>
-  <a href="https://goo.gl/maps/2TokqbjCi3ntZkff6" target="_blank" rel="noopener noreferrer" class="ts-p">
-    Michel de Braeystraat 52<br>
-    2000 Antwerp<br>
-    Belgium
-  </a>
-</div>
-
-<div class="hide footer-info-block">
-  <span class="ts-eyebrown ts-purple">Amsterdam</span>
-  <a href="https://goo.gl/maps/Zv2Xcu64DuhGBLKT6" target="_blank" rel="noopener noreferrer" class="ts-p">
-    Vijzelstraat 68-78<br>
-    1017 HL Amsterdam<br>
-    Netherlands
-  </a>
-</div>
-
-<div class="footer-info-block">
-  <div class="socials">
-  <div class="ts-eyebrown">Follow us</div>
-  <ul class="socials-ul">
-    
-    <li class="socials-li">
-      <a href="t.me#" target="_blank" rel="noreferrer" class="socials-a" aria-label="LinkedIn">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="2500" width="2500" viewBox="0 0 500 500"><path d="M250 500c138.071 0 250-111.929 250-250S388.071 0 250 0 0 111.929 0 250s111.929 250 250 250z" fill="#34aadf"/><path d="M104.047 247.832s125-51.3 168.352-69.364c16.619-7.225 72.977-30.347 72.977-30.347s26.012-10.115 23.844 14.451c-.723 10.116-6.503 45.52-12.283 83.815-8.671 54.191-18.064 113.439-18.064 113.439s-1.445 16.619-13.728 19.509-32.515-10.115-36.127-13.006c-2.891-2.167-54.191-34.682-72.977-50.578-5.058-4.335-10.838-13.005.722-23.121 26.012-23.844 57.081-53.468 75.867-72.254 8.671-8.671 17.341-28.902-18.786-4.336-51.3 35.405-101.878 68.642-101.878 68.642s-11.561 7.225-33.237.722c-21.677-6.502-46.966-15.173-46.966-15.173s-17.34-10.838 12.284-22.399z" fill="#fff"/></svg>
-      </a>
-    </li>
-    <li class="socials-li">
-      <a href="x.com/#" target="_blank" rel="noreferrer" class="socials-a" aria-label="Vimeo">
-        
-        
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-
-          <defs>
-          </defs>
-          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-            <rect x="0" y="0" rx="0" ry="0" width="90" height="90" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,155,240); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
-            <path d="M 17.884 19.496 L 38.925 47.63 L 17.751 70.504 h 4.765 l 18.538 -20.027 l 14.978 20.027 h 16.217 L 50.024 40.788 l 19.708 -21.291 h -4.765 L 47.895 37.94 L 34.101 19.496 H 17.884 z M 24.892 23.006 h 7.45 L 65.24 66.993 h -7.45 L 24.892 23.006 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-          </g>
-          </svg>
-
-</a>
-    </li>
-  </ul>
-</div>
-</div>
+                      <a href="contact.html" class="button button--outlined button button--md button--icon-green"
+                        aria-label="undefined">
+                        <span class="button-gradient"></span>
+                        <span class="button-bg"></span>
 
 
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <div class="wrap--narrow">
-          <div class="lg:grid grid-cols-12 gap-x-24">
-            <div class="col-span-5 col-start-8 flex gap-x-24">
-              <div class="menu-footer-copyright">Copyright © 2023 Dream Browser . All Rights Reserved</div>
-<div class="menu-footer-privacy"> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-  </div>
-  <div class="reel-video" style="opacity: 0; pointer-events: none;">
-  <div class="reel-video-outer">
-    <div class="reel-video-inner">
-      <div class="video is-muted">
-        <video poster="videos/reel/engaged-reel.webp" src="videos/reel/engaged-reel.mp4" disablepictureinpicture muted loop playsinline></video>
-        <div class="video-controls">
-          <div class="video-controls-buttons">
-            <div class="video-controls-playback">
-              <div class="video-controls-playback-icon -play">
-                <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.75 8.59717V1.40283C0.75 0.758457 1.50894 0.414074 1.99388 0.838394L6.10493 4.43557C6.44643 4.73438 6.44643 5.26562 6.10493 5.56443L1.99388 9.16161C1.50894 9.58593 0.75 9.24154 0.75 8.59717Z" fill="currentColor"></path>
-                </svg>
-              </div>
-              <div class="video-controls-playback-icon -pause">
-                <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 0V8" stroke="currentColor" stroke-width="2"></path>
-                  <path d="M5 0V8" stroke="currentColor" stroke-width="2"></path>
-                </svg>
-              </div>
-            </div>
 
-            <div class="video-controls-progress">
-              <progress class="video-controls-progress-bar" value="0"></progress>
-              <label for="v-seek" class="video-controls-progress-seek-label">Video Progress</label>
-              <input id="v-seek" class="video-controls-progress-seek" value="0" min="0" type="range" step=".001">
-              
-              <div class="video-controls-time">
-                <div class="video-controls-time-current">00:00</div>
-              </div>
-            </div>
+                        <span class="hide button-text">
+                          <span class="button-text-static">Stop the scroll, start to engage</span>
+                          <span class="button-text-hover">Stop the scroll, start to engage</span>
+                        </span>
 
-
-            <div class="video-controls-right">
-              <div class="video-controls-right-inner">
-                <div class="video-controls-mute">
-                  <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 6.53068V3.87574C0 3.5996 0.223858 3.37574 0.5 3.37574H2.07786C2.23831 3.37574 2.38901 3.29874 2.48303 3.16872L4.62466 0.207019C4.71868 0.0770003 4.86938 0 5.02983 0H6.5C6.77614 0 7 0.223858 7 0.5V9.5C7 9.77614 6.77614 10 6.5 10H5.01058C4.86103 10 4.71932 9.93305 4.62435 9.81752L2.48335 7.21316C2.38837 7.09763 2.24667 7.03068 2.09711 7.03068H0.5C0.223857 7.03068 0 6.80682 0 6.53068Z" fill="currentColor"></path>
-
-
-                    <g class="active">
-                      <mask id="mask0_2_19" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="2" width="8" height="8">
-                        <circle cx="12" cy="6" r="4" fill="#FCFEEA"></circle>
-                      </mask>
-                      <g mask="url(#mask0_2_19)">
-                        <circle cx="6" cy="6" r="5.25" stroke="currentColor" stroke-width="1.5"></circle>
-                      </g>
-                      <mask id="mask1_2_19" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="1" width="10" height="10">
-                        <circle cx="14" cy="6" r="5" fill="#FCFEEA"></circle>
-                      </mask>
-                      <g mask="url(#mask1_2_19)">
-                        <circle cx="6" cy="6" r="8.25" stroke="currentColor" stroke-width="1.5"></circle>
-                      </g>
-                    </g> 
-
-                    <g class="muted">
-                      <path d="M10.1719 7.82812L15.8287 2.17127" stroke="currentColor" stroke-width="1.5"></path>
-                      <path d="M15.8281 7.82812L10.1713 2.17127" stroke="currentColor" stroke-width="1.5"></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="video-controls-fullscreen">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.5 1.5H1.5V5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-                    <path d="M8.5 12.5L12.5 12.5L12.5 8.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-                    <path d="M12.5 5.5L12.5 1.5L8.5 1.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-                    <path d="M1.5 8.5L1.5 12.5L5.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
-                  </svg>
+                        <span class="button-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="var(--button-icon-bg)"></circle>
+                            <path d="M11 15L14 12L11 9" stroke="var(--button-icon-color)" stroke-width="1.5"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <footer class="footer" data-scroll-item>
+            <div class="gl-dom-bubble" data-gl-parallax-bottom></div>
+
+            <div class="footer-screen">
+              <div class="footer-screen-inner">
+                <div class="footer-top">
+                  <div class="wrap--narrow">
+                    <div class="lg:grid grid-cols-12 gap-x-24 ">
+                      <div class="col-span-7"></div>
+                      <div class="col-span-5">
+                        <div class="  footer-info-block">
+                          <div class="ts-eyebrown ts-purple"> </div>
+
+                          <div class="lasttesxt">
+                            <p>
+                              The $DREAM token is expressly clarified as
+                              non-securities.
+                              Dream Browser INC assumes no responsibility for any losses
+                              incurred from acquiring $DREAM tokens. It is crucial to
+                              recognize that obtaining $DREAM tokens is not mandatory for
+                              accessing Dream Browser. Furthermore, it is essential to
+                              comprehend that the purchase of $DREAM tokens does not assure
+                              any financial gains.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="footer-info-block"></div>
+
+                        <div class="hide footer-info-block">
+                          <div class="ts-eyebrown ts-purple">Antwerp</div>
+                          <a href="https://goo.gl/maps/2TokqbjCi3ntZkff6" target="_blank" rel="noopener noreferrer"
+                            class="ts-p">
+                            Michel de Braeystraat 52<br>
+                            2000 Antwerp<br>
+                            Belgium
+                          </a>
+                        </div>
+
+                        <div class="hide footer-info-block">
+                          <span class="ts-eyebrown ts-purple">Amsterdam</span>
+                          <a href="https://goo.gl/maps/Zv2Xcu64DuhGBLKT6" target="_blank" rel="noopener noreferrer"
+                            class="ts-p">
+                            Vijzelstraat 68-78<br>
+                            1017 HL Amsterdam<br>
+                            Netherlands
+                          </a>
+                        </div>
+
+                        <div class="footer-info-block">
+                          <div class="socials">
+                            <div class="ts-eyebrown">Follow us</div>
+                            <ul class="socials-ul">
+
+                              <li class="socials-li">
+                                <a href="t.me#" target="_blank" rel="noreferrer" class="socials-a"
+                                  aria-label="LinkedIn">
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="2500" width="2500"
+                                    viewBox="0 0 500 500">
+                                    <path
+                                      d="M250 500c138.071 0 250-111.929 250-250S388.071 0 250 0 0 111.929 0 250s111.929 250 250 250z"
+                                      fill="#34aadf" />
+                                    <path
+                                      d="M104.047 247.832s125-51.3 168.352-69.364c16.619-7.225 72.977-30.347 72.977-30.347s26.012-10.115 23.844 14.451c-.723 10.116-6.503 45.52-12.283 83.815-8.671 54.191-18.064 113.439-18.064 113.439s-1.445 16.619-13.728 19.509-32.515-10.115-36.127-13.006c-2.891-2.167-54.191-34.682-72.977-50.578-5.058-4.335-10.838-13.005.722-23.121 26.012-23.844 57.081-53.468 75.867-72.254 8.671-8.671 17.341-28.902-18.786-4.336-51.3 35.405-101.878 68.642-101.878 68.642s-11.561 7.225-33.237.722c-21.677-6.502-46.966-15.173-46.966-15.173s-17.34-10.838 12.284-22.399z"
+                                      fill="#fff" />
+                                  </svg>
+                                </a>
+                              </li>
+                              <li class="socials-li">
+                                <a href="x.com/#" target="_blank" rel="noreferrer" class="socials-a" aria-label="Vimeo">
+
+
+                                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+                                    <defs>
+                                    </defs>
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                      <rect x="0" y="0" rx="0" ry="0" width="90" height="90"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,155,240); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " />
+                                      <path
+                                        d="M 17.884 19.496 L 38.925 47.63 L 17.751 70.504 h 4.765 l 18.538 -20.027 l 14.978 20.027 h 16.217 L 50.024 40.788 l 19.708 -21.291 h -4.765 L 47.895 37.94 L 34.101 19.496 H 17.884 z M 24.892 23.006 h 7.45 L 65.24 66.993 h -7.45 L 24.892 23.006 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    </g>
+                                  </svg>
+
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-bottom">
+                  <div class="wrap--narrow">
+                    <div class="lg:grid grid-cols-12 gap-x-24">
+                      <div class="col-span-5 col-start-8 flex gap-x-24">
+                        <div class="menu-footer-copyright">Copyright © 2023 Dream Browser . All Rights Reserved</div>
+                        <div class="menu-footer-privacy"> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="reel-video" style="opacity: 0; pointer-events: none;">
+          <div class="reel-video-outer">
+            <div class="reel-video-inner">
+              <div class="video is-muted">
+                <video poster="videos/reel/engaged-reel.webp" src="videos/reel/engaged-reel.mp4" disablepictureinpicture
+                  muted loop playsinline></video>
+                <div class="video-controls">
+                  <div class="video-controls-buttons">
+                    <div class="video-controls-playback">
+                      <div class="video-controls-playback-icon -play">
+                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M0.75 8.59717V1.40283C0.75 0.758457 1.50894 0.414074 1.99388 0.838394L6.10493 4.43557C6.44643 4.73438 6.44643 5.26562 6.10493 5.56443L1.99388 9.16161C1.50894 9.58593 0.75 9.24154 0.75 8.59717Z"
+                            fill="currentColor"></path>
+                        </svg>
+                      </div>
+                      <div class="video-controls-playback-icon -pause">
+                        <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 0V8" stroke="currentColor" stroke-width="2"></path>
+                          <path d="M5 0V8" stroke="currentColor" stroke-width="2"></path>
+                        </svg>
+                      </div>
+                    </div>
 
-  <div class="reel-video-header">
-    <div class="wrap--wide">
-      <div class="reel-video-close">
-        <button class="button button--close" aria-label="Close">
-  <span class="button-gradient"></span>
-  <span class="button-bg"></span>
-  <span class="button-text-outer">
-    <span class="button-text">
-      <span class="button-text button-text--close">
-        <span class="button-text-static">Close</span>
-        <span class="button-text-hover">Close</span>
-      </span>
-    </span>
-  </span>
-  <span class="button-icon button-icon--menu">
-    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M0 6H12" stroke="currentColor" stroke-width="1.5" stroke-dasharray="12 0"></path>
-  <path d="M0 6H12" stroke="currentColor" stroke-width="1.5"></path>
-</svg>
-  </span>
-</button>
-      </div>
-    </div>
-  </div>
-</div>
+                    <div class="video-controls-progress">
+                      <progress class="video-controls-progress-bar" value="0"></progress>
+                      <label for="v-seek" class="video-controls-progress-seek-label">Video Progress</label>
+                      <input id="v-seek" class="video-controls-progress-seek" value="0" min="0" type="range"
+                        step=".001">
 
-          <div class="js-design-toggle" style="opacity: 0">
-  <img src="images/dev/home-work-hover.webp">
-</div>
-        </div>
-      </main>
-    </div>
+                      <div class="video-controls-time">
+                        <div class="video-controls-time-current">00:00</div>
+                      </div>
+                    </div>
 
-    <nav class="menu" style="pointer-events: none;">
-  <div class="menu-outer" style="opacity: 0;">
-    <div class="menu-inner">
-      <ul class="menu-ul">
-        <li class="menu-li">
-  <a class="menu-a" href="vision.html" data-link-slug="vision" data-transition="menu" aria-label="Go to vision page">
-    <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Vision</span>
-    <span class="menu-a-static" data-split-chars data-split-chars-wrap>Vision</span>
-  </a>
-</li>
-        <li class="menu-li">
-  <a class="menu-a" href="work.1.html" data-link-slug="work" data-transition="menu" aria-label="Go to work page">
-    <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Work</span>
-    <span class="menu-a-static" data-split-chars data-split-chars-wrap>Work</span>
-  </a>
-</li>
-        <li class="menu-li">
-  <a class="menu-a" href="services.html" data-link-slug="services" data-transition="menu" aria-label="Go to services page">
-    <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Services</span>
-    <span class="menu-a-static" data-split-chars data-split-chars-wrap>Services</span>
-  </a>
-</li>
-        <li class="menu-li">
-  <a class="menu-a" href="careers.html" data-link-slug="careers" data-transition="menu" aria-label="Go to careers page">
-    <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Careers</span>
-    <span class="menu-a-static" data-split-chars data-split-chars-wrap>Careers</span>
-  </a>
-</li>
-        <li class="menu-li">
-  <a class="hide menu-a" href="contact.html" data-link-slug="contact" data-transition="menu" aria-label="Go to contact page">
-    <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Get in touch</span>
-    <span class="menu-a-static" data-split-chars data-split-chars-wrap>Get in touch</span>
-  </a>
-</li>
-      </ul>
-      <div class="menu-footer">
-        <div class="wrap--wide">
-          <div class="menu-footer-left">
-            <div class="menu-footer-copyright">Copyright © 2023 DreamBrowser . All Rights Reserved</div>
-<div class="menu-footer-privacy"><a href="privacy-policy.html">Privacy Policy</a></div>
+
+                    <div class="video-controls-right">
+                      <div class="video-controls-right-inner">
+                        <div class="video-controls-mute">
+                          <svg width="17" height="10" viewBox="0 0 17 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M0 6.53068V3.87574C0 3.5996 0.223858 3.37574 0.5 3.37574H2.07786C2.23831 3.37574 2.38901 3.29874 2.48303 3.16872L4.62466 0.207019C4.71868 0.0770003 4.86938 0 5.02983 0H6.5C6.77614 0 7 0.223858 7 0.5V9.5C7 9.77614 6.77614 10 6.5 10H5.01058C4.86103 10 4.71932 9.93305 4.62435 9.81752L2.48335 7.21316C2.38837 7.09763 2.24667 7.03068 2.09711 7.03068H0.5C0.223857 7.03068 0 6.80682 0 6.53068Z"
+                              fill="currentColor"></path>
+
+
+                            <g class="active">
+                              <mask id="mask0_2_19" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="2"
+                                width="8" height="8">
+                                <circle cx="12" cy="6" r="4" fill="#FCFEEA"></circle>
+                              </mask>
+                              <g mask="url(#mask0_2_19)">
+                                <circle cx="6" cy="6" r="5.25" stroke="currentColor" stroke-width="1.5"></circle>
+                              </g>
+                              <mask id="mask1_2_19" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="1"
+                                width="10" height="10">
+                                <circle cx="14" cy="6" r="5" fill="#FCFEEA"></circle>
+                              </mask>
+                              <g mask="url(#mask1_2_19)">
+                                <circle cx="6" cy="6" r="8.25" stroke="currentColor" stroke-width="1.5"></circle>
+                              </g>
+                            </g>
+
+                            <g class="muted">
+                              <path d="M10.1719 7.82812L15.8287 2.17127" stroke="currentColor" stroke-width="1.5">
+                              </path>
+                              <path d="M15.8281 7.82812L10.1713 2.17127" stroke="currentColor" stroke-width="1.5">
+                              </path>
+                            </g>
+                          </svg>
+                        </div>
+                        <div class="video-controls-fullscreen">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 1.5H1.5V5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                            </path>
+                            <path d="M8.5 12.5L12.5 12.5L12.5 8.5" stroke="currentColor" stroke-width="1.5"
+                              stroke-linejoin="round"></path>
+                            <path d="M12.5 5.5L12.5 1.5L8.5 1.5" stroke="currentColor" stroke-width="1.5"
+                              stroke-linejoin="round"></path>
+                            <path d="M1.5 8.5L1.5 12.5L5.5 12.5" stroke="currentColor" stroke-width="1.5"
+                              stroke-linejoin="round"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="menu-footer-right">
-            <div class="socials">
-  <div class="ts-eyebrown">Follow us</div>
-  <ul class="socials-ul">
-    <li class="socials-li">
-      <a href="https://www.instagram.com/#" target="_blank" rel="noreferrer" class="socials-a" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11.4154 11.4145C12.1964 10.6333 12.1964 9.36686 11.4154 8.58572C10.6345 7.80459 9.36829 7.80459 8.58733 8.58572C7.80637 9.36686 7.80637 10.6333 8.58733 11.4145C9.36829 12.1956 10.6345 12.1956 11.4154 11.4145Z" fill="currentColor"></path>
-  <path d="M15.9581 7.5259C15.9126 6.56462 15.6931 5.71312 14.989 5.01157C14.2873 4.31002 13.4363 4.09045 12.475 4.04225C11.4844 3.98575 8.51582 3.98575 7.52531 4.04225C6.56691 4.08777 5.7156 4.30734 5.01153 5.00889C4.30746 5.71044 4.09035 6.56194 4.04216 7.52296C3.98595 8.5137 3.98595 11.4832 4.04216 12.474C4.08767 13.4353 4.30719 14.2868 5.01127 14.9883C5.71534 15.6899 6.56397 15.9094 7.52504 15.9576C8.51556 16.0139 11.4844 16.0139 12.475 15.9576C13.436 15.9121 14.2873 15.6925 14.9887 14.9883C15.6901 14.2868 15.9096 13.4353 15.9578 12.474C16.014 11.4832 16.014 8.51638 15.9578 7.52564L15.9581 7.5259ZM10.0016 13.0767C8.29898 13.0767 6.92564 11.7031 6.92564 10.0001C6.92564 8.29707 8.29898 6.92343 10.0016 6.92343C11.7042 6.92343 13.0776 8.29707 13.0776 10.0001C13.0776 11.7031 11.7042 13.0767 10.0016 13.0767ZM13.2034 7.51519C12.8045 7.51519 12.4859 7.19387 12.4859 6.79758C12.4859 6.40128 12.8072 6.07996 13.2034 6.07996C13.5996 6.07996 13.9208 6.40128 13.9208 6.79758C13.9208 7.19387 13.5996 7.51519 13.2034 7.51519Z" fill="currentColor"></path>
-</svg></a>
-    </li>
-    <li class="socials-li">
-      <a href="https://www.linkedin.com/company/#" target="_blank" rel="noreferrer" class="socials-a" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M6.77116 14.8333V7.02942H4.34928V14.8333H6.77116ZM5.5472 5.98542C6.32845 5.98542 6.95345 5.33292 6.95345 4.54992C6.95345 3.79302 6.32845 3.16663 5.5472 3.16663C4.79199 3.16663 4.16699 3.79302 4.16699 4.54992C4.16699 5.33292 4.79199 5.98542 5.5472 5.98542ZM15.8076 14.8333H15.8337V10.5529C15.8337 8.46491 15.3649 6.84672 12.917 6.84672C11.7451 6.84672 10.9639 7.49921 10.6253 8.09951H10.5993V7.02942H8.28158V14.8333H10.7035V10.9705C10.7035 9.95261 10.8857 8.98691 12.1357 8.98691C13.3857 8.98691 13.4118 10.1353 13.4118 11.0488V14.8333H15.8076Z" fill="currentColor"></path>
-</svg></a>
-    </li>
-    <li class="socials-li">
-      <a href="#" target="_blank" rel="noreferrer" class="socials-a" aria-label="Vimeo"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M15.9939 7.54089C15.9359 8.77895 15.0538 10.4742 13.3418 12.6266C11.5746 14.8755 10.0802 16 8.85569 16C8.09834 16 7.45706 15.3157 6.93184 13.947C5.91043 10.2782 5.47518 8.12868 4.63077 8.12868C4.53211 8.12868 4.19261 8.33029 3.60936 8.72783L3 7.95547C4.49729 6.66914 5.92785 5.23799 6.82448 5.15848C7.83718 5.06193 8.45815 5.74059 8.69319 7.18878C9.52599 12.3426 9.89451 13.1207 11.4092 10.7865C11.9518 9.94601 12.2449 9.30711 12.2855 8.86697C12.4248 7.5636 11.2467 7.65163 10.4487 7.9867C11.0871 5.93936 12.3087 4.94551 14.1107 5.0023C15.4397 5.03638 16.0694 5.88541 15.9939 7.54089Z" fill="currentColor"></path>
-</svg></a>
-    </li>
-  </ul>
-</div>
+
+          <div class="reel-video-header">
+            <div class="wrap--wide">
+              <div class="reel-video-close">
+                <button class="button button--close" aria-label="Close">
+                  <span class="button-gradient"></span>
+                  <span class="button-bg"></span>
+                  <span class="button-text-outer">
+                    <span class="button-text">
+                      <span class="button-text button-text--close">
+                        <span class="button-text-static">Close</span>
+                        <span class="button-text-hover">Close</span>
+                      </span>
+                    </span>
+                  </span>
+                  <span class="button-icon button-icon--menu">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 6H12" stroke="currentColor" stroke-width="1.5" stroke-dasharray="12 0"></path>
+                      <path d="M0 6H12" stroke="currentColor" stroke-width="1.5"></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-design-toggle" style="opacity: 0">
+          <img src="images/dev/home-work-hover.webp">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <nav class="menu" style="pointer-events: none;">
+    <div class="menu-outer" style="opacity: 0;">
+      <div class="menu-inner">
+        <ul class="menu-ul">
+          <li class="menu-li">
+            <a class="menu-a" href="vision.html" data-link-slug="vision" data-transition="menu"
+              aria-label="Go to vision page">
+              <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Vision</span>
+              <span class="menu-a-static" data-split-chars data-split-chars-wrap>Vision</span>
+            </a>
+          </li>
+          <li class="menu-li">
+            <a class="menu-a" href="work.1.html" data-link-slug="work" data-transition="menu"
+              aria-label="Go to work page">
+              <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Work</span>
+              <span class="menu-a-static" data-split-chars data-split-chars-wrap>Work</span>
+            </a>
+          </li>
+          <li class="menu-li">
+            <a class="menu-a" href="services.html" data-link-slug="services" data-transition="menu"
+              aria-label="Go to services page">
+              <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Services</span>
+              <span class="menu-a-static" data-split-chars data-split-chars-wrap>Services</span>
+            </a>
+          </li>
+          <li class="menu-li">
+            <a class="menu-a" href="careers.html" data-link-slug="careers" data-transition="menu"
+              aria-label="Go to careers page">
+              <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Careers</span>
+              <span class="menu-a-static" data-split-chars data-split-chars-wrap>Careers</span>
+            </a>
+          </li>
+          <li class="menu-li">
+            <a class="hide menu-a" href="contact.html" data-link-slug="contact" data-transition="menu"
+              aria-label="Go to contact page">
+              <span class="menu-a-hover em" data-split-chars data-split-chars-wrap>Get in touch</span>
+              <span class="menu-a-static" data-split-chars data-split-chars-wrap>Get in touch</span>
+            </a>
+          </li>
+        </ul>
+        <div class="menu-footer">
+          <div class="wrap--wide">
+            <div class="menu-footer-left">
+              <div class="menu-footer-copyright">Copyright © 2023 DreamBrowser . All Rights Reserved</div>
+              <div class="menu-footer-privacy"><a href="privacy-policy.html">Privacy Policy</a></div>
+            </div>
+            <div class="menu-footer-right">
+              <div class="socials">
+                <div class="ts-eyebrown">Follow us</div>
+                <ul class="socials-ul">
+                  <li class="socials-li">
+                    <a href="https://www.instagram.com/#" target="_blank" rel="noreferrer" class="socials-a"
+                      aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.4154 11.4145C12.1964 10.6333 12.1964 9.36686 11.4154 8.58572C10.6345 7.80459 9.36829 7.80459 8.58733 8.58572C7.80637 9.36686 7.80637 10.6333 8.58733 11.4145C9.36829 12.1956 10.6345 12.1956 11.4154 11.4145Z"
+                          fill="currentColor"></path>
+                        <path
+                          d="M15.9581 7.5259C15.9126 6.56462 15.6931 5.71312 14.989 5.01157C14.2873 4.31002 13.4363 4.09045 12.475 4.04225C11.4844 3.98575 8.51582 3.98575 7.52531 4.04225C6.56691 4.08777 5.7156 4.30734 5.01153 5.00889C4.30746 5.71044 4.09035 6.56194 4.04216 7.52296C3.98595 8.5137 3.98595 11.4832 4.04216 12.474C4.08767 13.4353 4.30719 14.2868 5.01127 14.9883C5.71534 15.6899 6.56397 15.9094 7.52504 15.9576C8.51556 16.0139 11.4844 16.0139 12.475 15.9576C13.436 15.9121 14.2873 15.6925 14.9887 14.9883C15.6901 14.2868 15.9096 13.4353 15.9578 12.474C16.014 11.4832 16.014 8.51638 15.9578 7.52564L15.9581 7.5259ZM10.0016 13.0767C8.29898 13.0767 6.92564 11.7031 6.92564 10.0001C6.92564 8.29707 8.29898 6.92343 10.0016 6.92343C11.7042 6.92343 13.0776 8.29707 13.0776 10.0001C13.0776 11.7031 11.7042 13.0767 10.0016 13.0767ZM13.2034 7.51519C12.8045 7.51519 12.4859 7.19387 12.4859 6.79758C12.4859 6.40128 12.8072 6.07996 13.2034 6.07996C13.5996 6.07996 13.9208 6.40128 13.9208 6.79758C13.9208 7.19387 13.5996 7.51519 13.2034 7.51519Z"
+                          fill="currentColor"></path>
+                      </svg></a>
+                  </li>
+                  <li class="socials-li">
+                    <a href="https://www.linkedin.com/company/#" target="_blank" rel="noreferrer" class="socials-a"
+                      aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.77116 14.8333V7.02942H4.34928V14.8333H6.77116ZM5.5472 5.98542C6.32845 5.98542 6.95345 5.33292 6.95345 4.54992C6.95345 3.79302 6.32845 3.16663 5.5472 3.16663C4.79199 3.16663 4.16699 3.79302 4.16699 4.54992C4.16699 5.33292 4.79199 5.98542 5.5472 5.98542ZM15.8076 14.8333H15.8337V10.5529C15.8337 8.46491 15.3649 6.84672 12.917 6.84672C11.7451 6.84672 10.9639 7.49921 10.6253 8.09951H10.5993V7.02942H8.28158V14.8333H10.7035V10.9705C10.7035 9.95261 10.8857 8.98691 12.1357 8.98691C13.3857 8.98691 13.4118 10.1353 13.4118 11.0488V14.8333H15.8076Z"
+                          fill="currentColor"></path>
+                      </svg></a>
+                  </li>
+                  <li class="socials-li">
+                    <a href="#" target="_blank" rel="noreferrer" class="socials-a" aria-label="Vimeo"><svg width="20"
+                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.9939 7.54089C15.9359 8.77895 15.0538 10.4742 13.3418 12.6266C11.5746 14.8755 10.0802 16 8.85569 16C8.09834 16 7.45706 15.3157 6.93184 13.947C5.91043 10.2782 5.47518 8.12868 4.63077 8.12868C4.53211 8.12868 4.19261 8.33029 3.60936 8.72783L3 7.95547C4.49729 6.66914 5.92785 5.23799 6.82448 5.15848C7.83718 5.06193 8.45815 5.74059 8.69319 7.18878C9.52599 12.3426 9.89451 13.1207 11.4092 10.7865C11.9518 9.94601 12.2449 9.30711 12.2855 8.86697C12.4248 7.5636 11.2467 7.65163 10.4487 7.9867C11.0871 5.93936 12.3087 4.94551 14.1107 5.0023C15.4397 5.03638 16.0694 5.88541 15.9939 7.54089Z"
+                          fill="currentColor"></path>
+                      </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="menu-overlay">
-    <div class="menu-overlay-layer"></div>
-    <div class="menu-overlay-layer"></div>
-    <div class="menu-overlay-layer"></div>
-  </div>
-</nav>
-    <div class="preloader" style="opacity: 0;">
-  <div class="preloader-icon">
-    <div class="preloader-icon-outer">
-      <div class="preloader-icon-inner">
-        <picture>
-          <source class="preloader-icon-fallback" srcset="/images/template/preloader-circle.webp" type="image/webp">
-          <img class="preloader-icon-fallback" src="images/template/preloader-circle.png" alt="Preloader circle">
-        </picture>
-        <img class="preloader-icon-logo" src="logop.png">
-        <svg xmlns="http://www.w3.org/2000/svg" width="266" height="266" viewBox="0 0 266 266" fill="none">
-          <path class="preloader-icon-logo" d="M126.912 111C127.2 111.517 127.47 112.203 127.721 113.051C127.971 113.902 128.187 114.797 128.368 115.74C128.547 116.682 128.694 117.595 128.8 118.485C128.91 119.371 128.961 120.113 128.961 120.701C128.961 122.586 128.691 124.267 128.153 125.745C127.611 127.222 126.938 128.581 126.126 129.82C125.317 131.058 124.433 132.213 123.481 133.286C122.528 134.358 121.644 135.449 120.835 136.557C120.026 137.665 119.35 138.85 118.809 140.105C118.268 141.361 118 142.768 118 144.319C118 149.044 121.676 151 125.084 151C129.842 151 133.394 148.825 134.957 144.623C135.504 143.152 135.893 141.583 136.037 139.884C136.181 138.185 136.198 136.633 136.091 135.227L141.653 149.806H148.4L133.659 111H126.912ZM134.741 137.331C134.741 138.403 134.652 139.568 134.471 140.823C134.29 142.079 133.964 143.261 133.446 144.343C132.778 145.734 131.115 148.14 128.101 148.14C126.589 148.14 125.427 147.67 124.618 146.727C123.809 145.785 123.403 144.555 123.403 143.04C123.403 141.302 123.789 139.603 124.563 137.939C125.337 136.276 126.163 134.53 127.047 132.701C127.928 130.871 128.711 128.895 129.396 126.77C130.078 124.646 130.332 122.234 130.153 119.537C130.729 121.014 131.287 122.465 131.828 123.889C132.37 125.313 132.853 126.744 133.288 128.185C133.72 129.627 134.071 131.096 134.341 132.594C134.612 134.092 134.747 135.67 134.747 137.334L134.741 137.331Z" fill="#FCFEEA"></path>
-          <g class="preloader-icon-circles-outer">
-            <g class="preloader-icon-circles-inner">
-              <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5" stroke="url(#paint0_linear_821_1681)"></circle>
-              <g filter="url(#filter0_f_821_1681)">
-                <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5" stroke="url(#paint1_linear_821_1681)"></circle>
-              </g>
-              <g filter="url(#filter1_f_821_1681)">
-                <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5" stroke="url(#paint2_linear_821_1681)"></circle>
-              </g>
-              <g filter="url(#filter2_f_821_1681)">
-                <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5" stroke="url(#paint3_linear_821_1681)" stroke-width="15"></circle>
+    <div class="menu-overlay">
+      <div class="menu-overlay-layer"></div>
+      <div class="menu-overlay-layer"></div>
+      <div class="menu-overlay-layer"></div>
+    </div>
+  </nav>
+  <div class="preloader" style="opacity: 0;">
+    <div class="preloader-icon">
+      <div class="preloader-icon-outer">
+        <div class="preloader-icon-inner">
+          <picture>
+            <source class="preloader-icon-fallback" srcset="/images/template/preloader-circle.webp" type="image/webp">
+            <img class="preloader-icon-fallback" src="images/template/preloader-circle.png" alt="Preloader circle">
+          </picture>
+          <img class="preloader-icon-logo" src="logop.png">
+          <svg xmlns="http://www.w3.org/2000/svg" width="266" height="266" viewBox="0 0 266 266" fill="none">
+            <path class="preloader-icon-logo"
+              d="M126.912 111C127.2 111.517 127.47 112.203 127.721 113.051C127.971 113.902 128.187 114.797 128.368 115.74C128.547 116.682 128.694 117.595 128.8 118.485C128.91 119.371 128.961 120.113 128.961 120.701C128.961 122.586 128.691 124.267 128.153 125.745C127.611 127.222 126.938 128.581 126.126 129.82C125.317 131.058 124.433 132.213 123.481 133.286C122.528 134.358 121.644 135.449 120.835 136.557C120.026 137.665 119.35 138.85 118.809 140.105C118.268 141.361 118 142.768 118 144.319C118 149.044 121.676 151 125.084 151C129.842 151 133.394 148.825 134.957 144.623C135.504 143.152 135.893 141.583 136.037 139.884C136.181 138.185 136.198 136.633 136.091 135.227L141.653 149.806H148.4L133.659 111H126.912ZM134.741 137.331C134.741 138.403 134.652 139.568 134.471 140.823C134.29 142.079 133.964 143.261 133.446 144.343C132.778 145.734 131.115 148.14 128.101 148.14C126.589 148.14 125.427 147.67 124.618 146.727C123.809 145.785 123.403 144.555 123.403 143.04C123.403 141.302 123.789 139.603 124.563 137.939C125.337 136.276 126.163 134.53 127.047 132.701C127.928 130.871 128.711 128.895 129.396 126.77C130.078 124.646 130.332 122.234 130.153 119.537C130.729 121.014 131.287 122.465 131.828 123.889C132.37 125.313 132.853 126.744 133.288 128.185C133.72 129.627 134.071 131.096 134.341 132.594C134.612 134.092 134.747 135.67 134.747 137.334L134.741 137.331Z"
+              fill="#FCFEEA"></path>
+            <g class="preloader-icon-circles-outer">
+              <g class="preloader-icon-circles-inner">
+                <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5" stroke="url(#paint0_linear_821_1681)">
+                </circle>
+                <g filter="url(#filter0_f_821_1681)">
+                  <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5"
+                    stroke="url(#paint1_linear_821_1681)"></circle>
+                </g>
+                <g filter="url(#filter1_f_821_1681)">
+                  <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5"
+                    stroke="url(#paint2_linear_821_1681)"></circle>
+                </g>
+                <g filter="url(#filter2_f_821_1681)">
+                  <circle class="preloader-icon-circle" cx="133" cy="133" r="59.5" stroke="url(#paint3_linear_821_1681)"
+                    stroke-width="15"></circle>
+                </g>
               </g>
             </g>
-          </g>
-          <defs>
-            <filter id="filter0_f_821_1681" x="57" y="57" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-              <feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_821_1681"></feGaussianBlur>
-            </filter>
-            <filter id="filter1_f_821_1681" x="65" y="65" width="136" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-              <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_821_1681"></feGaussianBlur>
-            </filter>
-            <filter id="filter2_f_821_1681" x="0.5" y="0.5" width="265" height="265" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
-              <feGaussianBlur stdDeviation="32.5" result="effect1_foregroundBlur_821_1681"></feGaussianBlur>
-            </filter>
-            <linearGradient class="preloader-icon-gradient" id="paint0_linear_821_1681" x1="73" y1="73" x2="193" y2="73" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#7672FF"></stop>
-              <stop offset="0.265625" stop-color="#BDB4F5"></stop>
-              <stop offset="0.515625" stop-color="#FCFEEA"></stop>
-              <stop offset="0.765625" stop-color="#00F0FF"></stop>
-              <stop offset="1" stop-color="#7672FF"></stop>
-            </linearGradient>
-            <linearGradient class="preloader-icon-gradient" id="paint1_linear_821_1681" x1="73" y1="73" x2="193" y2="73" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#7672FF"></stop>
-              <stop offset="0.265625" stop-color="#BDB4F5"></stop>
-              <stop offset="0.515625" stop-color="#FCFEEA"></stop>
-              <stop offset="0.765625" stop-color="#00F0FF"></stop>
-              <stop offset="1" stop-color="#7672FF"></stop>
-            </linearGradient>
-            <linearGradient class="preloader-icon-gradient" id="paint2_linear_821_1681" x1="73" y1="73" x2="193" y2="73" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#7672FF"></stop>
-              <stop offset="0.265625" stop-color="#BDB4F5"></stop>
-              <stop offset="0.515625" stop-color="#FCFEEA"></stop>
-              <stop offset="0.765625" stop-color="#00F0FF"></stop>
-              <stop offset="1" stop-color="#7672FF"></stop>
-            </linearGradient>
-            <linearGradient class="preloader-icon-gradient" id="paint3_linear_821_1681" x1="73" y1="73" x2="193" y2="73" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#7672FF"></stop>
-              <stop offset="0.265625" stop-color="#BDB4F5"></stop>
-              <stop offset="0.515625" stop-color="#FCFEEA"></stop>
-              <stop offset="0.765625" stop-color="#00F0FF"></stop>
-              <stop offset="1" stop-color="#7672FF"></stop>
-            </linearGradient>
-          </defs>
-        </svg>
+            <defs>
+              <filter id="filter0_f_821_1681" x="57" y="57" width="152" height="152" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                <feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_821_1681"></feGaussianBlur>
+              </filter>
+              <filter id="filter1_f_821_1681" x="65" y="65" width="136" height="136" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                <feGaussianBlur stdDeviation="4" result="effect1_foregroundBlur_821_1681"></feGaussianBlur>
+              </filter>
+              <filter id="filter2_f_821_1681" x="0.5" y="0.5" width="265" height="265" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                <feGaussianBlur stdDeviation="32.5" result="effect1_foregroundBlur_821_1681"></feGaussianBlur>
+              </filter>
+              <linearGradient class="preloader-icon-gradient" id="paint0_linear_821_1681" x1="73" y1="73" x2="193"
+                y2="73" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7672FF"></stop>
+                <stop offset="0.265625" stop-color="#BDB4F5"></stop>
+                <stop offset="0.515625" stop-color="#FCFEEA"></stop>
+                <stop offset="0.765625" stop-color="#00F0FF"></stop>
+                <stop offset="1" stop-color="#7672FF"></stop>
+              </linearGradient>
+              <linearGradient class="preloader-icon-gradient" id="paint1_linear_821_1681" x1="73" y1="73" x2="193"
+                y2="73" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7672FF"></stop>
+                <stop offset="0.265625" stop-color="#BDB4F5"></stop>
+                <stop offset="0.515625" stop-color="#FCFEEA"></stop>
+                <stop offset="0.765625" stop-color="#00F0FF"></stop>
+                <stop offset="1" stop-color="#7672FF"></stop>
+              </linearGradient>
+              <linearGradient class="preloader-icon-gradient" id="paint2_linear_821_1681" x1="73" y1="73" x2="193"
+                y2="73" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7672FF"></stop>
+                <stop offset="0.265625" stop-color="#BDB4F5"></stop>
+                <stop offset="0.515625" stop-color="#FCFEEA"></stop>
+                <stop offset="0.765625" stop-color="#00F0FF"></stop>
+                <stop offset="1" stop-color="#7672FF"></stop>
+              </linearGradient>
+              <linearGradient class="preloader-icon-gradient" id="paint3_linear_821_1681" x1="73" y1="73" x2="193"
+                y2="73" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7672FF"></stop>
+                <stop offset="0.265625" stop-color="#BDB4F5"></stop>
+                <stop offset="0.515625" stop-color="#FCFEEA"></stop>
+                <stop offset="0.765625" stop-color="#00F0FF"></stop>
+                <stop offset="1" stop-color="#7672FF"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
       </div>
     </div>
+
+    <div class="preloader-text">Loading<span class="preloader-text-dots">...</span></div>
   </div>
 
-  <div class="preloader-text">Loading<span class="preloader-text-dots">...</span></div>
-</div>
+  <div class="page-overlay">
+    <div class="page-overlay-layer-1"></div>
+    <div class="page-overlay-layer-2"></div>
+  </div>
 
-    <div class="page-overlay">
-      <div class="page-overlay-layer-1"></div>
-      <div class="page-overlay-layer-2"></div>
-    </div>
-
-    <script id="hs-script-loader" type="text/javascript" async defer src="https://js-eu1.hs-scripts.com/143671043.js"></script>
-  </body>
+  <script id="hs-script-loader" type="text/javascript" async defer
+    src="https://js-eu1.hs-scripts.com/143671043.js"></script>
+</body>
+ 
 </html>
